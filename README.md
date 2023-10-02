@@ -1,10 +1,12 @@
 # Projeto de Estudo: Adicionando Segurança a uma API REST com Spring Security e JWT
 
-Este é um projeto de estudo focado em aprofundar o conhecimento em Spring Security e JWT (JSON Web Tokens). O objetivo principal é entender e aplicar práticas avançadas de segurança em aplicações Java usando o ecossistema Spring.
+## Resumo
+
+Este projeto de estudo tem como objetivo aprofundar o conhecimento em Spring Security e JWT (JSON Web Tokens) e aplicar práticas avançadas de segurança em aplicações Java usando o ecossistema Spring.
 
 ## Introdução
 
-O Spring Security é uma estrutura poderosa e altamente configurável que permite proteger recursos e serviços em aplicativos Spring. JWT, por sua vez, é um método seguro e eficiente para autenticar e autorizar usuários em aplicativos distribuídos. Este projeto tem como objetivo explorar essas tecnologias e compreender como elas podem ser integradas para criar sistemas de autenticação e autorização robustos.
+O Spring Security é uma estrutura poderosa e altamente configurável que permite proteger recursos e serviços em aplicativos Spring. JWT, por sua vez, é um método seguro e eficiente para autenticar e autorizar usuários em aplicativos distribuídos. Neste projeto, exploraremos essas tecnologias e compreenderemos como integrá-las para criar sistemas de autenticação e autorização robustos.
 
 ## Objetivos do Projeto
 
@@ -18,12 +20,47 @@ Os principais objetivos deste projeto de estudo incluem:
 
 ## Estrutura do Projeto
 
-O projeto será estruturado da seguinte forma:
+A estrutura do projeto é a seguinte:
 
-- `src/`: O código-fonte do aplicativo.
+- `src/`: Contém o código-fonte do aplicativo.
 - `docs/`: Documentação relacionada ao projeto.
-- `exemplos/`: Exemplos de código e configuração.
-- `recursos/`: Arquivos e recursos necessários para o projeto.
+- `exemplos/`: Inclui exemplos de código e configuração.
+- `recursos/`: Armazena arquivos e recursos necessários para o projeto.
+## Configuração de Segurança
+
+- Configurações de usuário e senha no arquivo `application.properties` para personalizar a autenticação em memória.
+- A classe `WebSecurityConfig` estende `WebSecurityConfigurerAdapter` e permite configurar autenticação personalizada em memória. Isso inclui a definição de nomes de usuário, senhas e perfis (roles) para cada usuário.
+
+## Controle de Acesso
+
+- Implementação de endpoints de exemplo em um controlador (`WelcomeController`) que representam diferentes níveis de acesso.
+- Uso da anotação `@PreAuthorize` para pré-verificar as permissões de acesso com base nos perfis de usuário.
+- Acesso aos recursos é concedido somente se o usuário tiver os perfis (roles) apropriados.
+
+## Pontos Positivos
+
+- Configuração simples e rápida para autenticação em memória.
+- Controle flexível de acesso aos recursos com base nos perfis dos usuários.
+
+## Pontos Negativos
+
+- Senhas estáticas e expostas na aplicação, não recomendadas para ambientes de produção.
+- Configuração descentralizada com necessidade de adicionar permissões nos controllers.
+
+## Centralização da Configuração
+
+- O método `configure(HttpSecurity http)` na classe `WebSecurityConfig` permite centralizar a configuração de segurança.
+- Definição de regras de acesso para diferentes URLs, incluindo acesso público, acesso restrito a perfis específicos e autenticação básica.
+
+## Uso do HTTP Basic Authentication
+
+- O projeto habilita a autenticação básica HTTP para permitir que os clientes enviem suas credenciais sem a necessidade de uma tela de login.
+- Isso pode ser útil em APIs onde os clientes precisam autenticar por meio de cabeçalhos de solicitação.
+
+## Referências
+
+- [Documentação oficial do Spring Security](https://docs.spring.io/spring-security/reference/html5/)
+- [Documentação oficial do Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
 ## Configuração e Execução
 
@@ -43,4 +80,4 @@ Contribuições são bem-vindas! Se você deseja contribuir para este projeto, s
 2. Faça suas alterações.
 3. Envie um pull request descrevendo suas alterações e os motivos delas.
 
-
+Agradecemos por se juntar a nós neste projeto de estudo! Vamos aprender juntos sobre Spring Security e JWT.
