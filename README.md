@@ -12,11 +12,11 @@
 
 ## Resumo
 
-Este projeto de estudo tem como objetivo aprofundar o conhecimento em Spring Security e JWT (JSON Web Tokens) e aplicar práticas avançadas de segurança em aplicações Java usando o ecossistema Spring.
+Este projeto de estudo tem como objetivo aprofundar o conhecimento em Spring Security e aplicar práticas avançadas de segurança em aplicações Java usando o ecossistema Spring.
 
 ## Introdução
 
-O Spring Security é uma estrutura poderosa e altamente configurável que permite proteger recursos e serviços em aplicativos Spring. JWT, por sua vez, é um método seguro e eficiente para autenticar e autorizar usuários em aplicativos distribuídos. Neste projeto, exploraremos essas tecnologias e compreenderemos como integrá-las para criar sistemas de autenticação e autorização robustos.
+O Spring Security é uma estrutura poderosa e altamente configurável que permite proteger recursos e serviços em aplicativos Spring.Neste projeto, exploraremos essas tecnologias e compreenderemos como integrá-las para criar sistemas de autenticação e autorização robustos.
 
 ## Objetivos do Projeto
 
@@ -24,9 +24,7 @@ Os principais objetivos deste projeto de estudo incluem:
 
 1. Aprofundar o entendimento sobre os conceitos fundamentais do Spring Security.
 2. Explorar a implementação de autenticação e autorização em aplicativos Spring.
-3. Integrar JWT para a criação de tokens seguros de autenticação.
-4. Criar um aplicativo de exemplo que demonstre a autenticação e autorização usando Spring Security e JWT.
-5. Explorar práticas recomendadas de segurança, como proteção contra ataques de segurança comuns.
+3. Explorar práticas recomendadas de segurança, como proteção contra ataques de segurança comuns.
 
 ## Estrutura do Projeto
 
