@@ -1,4 +1,4 @@
-# Projeto de Estudo: Adicionando Segurança a uma API REST com Spring Security e JWT
+# Projeto de Estudo: Adicionando Segurança a uma API REST com Spring Security 
 
 ## Linguagens e ferramentas  usadas
 <div style="display: inline_block">
