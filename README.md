@@ -1,8 +1,8 @@
 # Projeto de Estudo: Adicionando Segurança a uma API REST com Spring Security 
 
 ## Linguagens e ferramentas  usadas
-<div style="display: inline_block">
-    <img align="center" alt="angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+<div 
+    <img align="center" alt="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
     <img align="center" alt="vsCode" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
 </div><br/>
 
