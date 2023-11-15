@@ -8,7 +8,6 @@
     <img align="center" alt="vscode" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
 </div><br/>
 
-
 ## Resumo
 
 Este projeto de estudo tem como objetivo aprofundar o conhecimento em Spring Security e aplicar práticas avançadas de segurança em aplicações Java usando o ecossistema Spring.
